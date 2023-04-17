@@ -13,6 +13,7 @@ function App() {
   const [data, setData] = useState([]);
 
   const addData = () => {
+    if (!name || !email) return;
     setData([
       ...data,
       {
